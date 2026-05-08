@@ -6,7 +6,7 @@
         width: 10px;
     }
     img{
-        width: 500px;
+        width: 100px;
     }
 }
 
@@ -42,7 +42,7 @@
                             content: '';
                             width: 0;
                             height: 2px;
-                            position: absolute;left: 0; bottom: 0;
+                            position: absolute;left: 0; bottom: -10px;
                             background-color: var(--main-color);
                             transition: 0.50s;
                         }
@@ -50,6 +50,7 @@
                         .nav-link.active{
                             background-color: transparent !important;
                             color: var(--main-color);
+                            font-weight: 700;
                         }
                         
                         .nav-link.active::after{
@@ -57,18 +58,117 @@
                         }
                     }
                     .nav-item:nth-child(2){
+                        position: relative;
                         .nav-link::after{
                             content: none !important;
                         }
-                        .nav-link::after::after{
+                        .nav-link::before{
                             content: '' !important;
                             width: 0 !important;
                             height: 2px !important;
                             background-color: var(--main-color);
-                            position: absolute; bottom: 0; left: 0;
+                            position: absolute; bottom: -10px; left: 0;
+                            transition: 0.50s;
                         }
-                        .nav-link:hover::after{
-                            width: 100%;
+                        .nav-link:hover::before{
+                            width: 100% !important;
+                        }
+                        .nav-link.show{
+                            color: var(--main-color);
+                            font-weight: 700;
+                        }
+                        .nav-link.show::before{
+                            width: 100% !important;
+                        }
+                        .dropdown-menu{
+                            width: 1050px;
+                            position: absolute; left: -700px; top: 40px;
+                            border: none;
+                            height: 400px;
+                            .inner-dropdown-menu{
+                                width: 100%;
+                                height: 100%;
+                                li:first-child{
+                                    .main-columns{
+                                        .property-box:hover{
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    img{
+                                    width: 70px;
+                                    height: 60px;
+                                }
+                                }
+                                li:nth-child(2){
+                                    .main-columns{
+                                        div{
+                                            align-items: center;
+                                            p{
+                                                margin: 0;
+                                            }
+                                            svg{
+                                                width: 20px;
+                                                color: gray;
+                                            }
+                                        }
+                                        div:hover{
+                                            cursor: pointer;
+                                        }
+                                        div:hover .p-links{
+                                            color: var(--main-color);
+                                        }
+                                    }
+                                }
+                                li:nth-child(3){
+                                    .main-columns{
+                                        .cities-boxes{
+                                            color: aliceblue;
+                                            width: 250px;
+                                            height: 70px;
+                                            background-position: center;
+                                            background-size: cover;
+                                            padding-top: 1px;
+                                            border-radius: 15px;
+                                            .background-color{
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: rgba(124, 58, 237, 0.6);
+                                                margin: 0;
+                                                padding-top: 1px;
+                                                border-radius: 15px;
+                                            }
+                                            h4{
+                                                margin: 0;
+                                                margin-top: 10px;
+                                                margin-left: 10px;
+                                                font-size: 20px;
+                                                font-weight: 700;
+                                            }
+                                            p{
+                                                margin: 0;
+                                                margin-top: 2px;
+                                                margin-left: 10px;
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .cities-boxes:nth-child(2){
+                                            background-image: url(/Images/new-york.jpeg);
+                                        }
+                                        .cities-boxes:nth-child(3){
+                                            background-image: url(/Images/los-angeles.jpeg);
+                                        }
+                                        .cities-boxes:nth-child(4){
+                                            background-image: url(/Images/miami.jpeg);
+                                        }
+                                        .cities-boxes:hover{
+                                            cursor: pointer;
+                                        }
+                                        .cities-boxes:hover .background-color{
+                                                                                    background-color: rgba(164, 112, 255, 0.7);
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
