@@ -555,3 +555,144 @@
         }
     }
 }
+
+.services{
+    padding-top: 140px;
+        .title-box{
+        .premium-collection{
+            color: var(--main-color);
+            .line{
+                height: 3px;
+                width: 80px;
+            }
+            .line:first-child{
+                border-radius: 100% 0 0 100%;
+                background: linear-gradient(to left, var(--main-color), var(--main-color), var(--main-orange), white);
+            }
+            .line:nth-child(3){
+                border-radius: 0 100% 100% 0;
+                background: linear-gradient(to right, var(--main-color), var(--main-color), var(--main-orange), white);
+            }
+            .title{
+                font-size: 20px;
+                padding: 10px 25px;
+                border-radius: 25px;
+                font-size: 15px;
+                font-weight: 700;
+                border: 1px solid lightgray;
+                background-color: var(--light-main-color);
+            }
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 900;
+            background: linear-gradient(to right, var(--main-color), var(--main-color), var(--main-orange));
+            background-clip: text;
+            color: transparent;
+        }
+        p{
+            width: 75%;
+            font-size: 22px;
+            text-align: center;
+        }
+    }
+    .nav-underline{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 48px;
+        border-bottom: 1px solid rgb(196, 196, 196);
+        .nav-item{
+            .nav-link{
+                color: rgb(49, 49, 49);
+                padding: 15px;
+                svg{
+                    width: 15px;
+                    margin-right: 5px;
+                }
+                &:hover{
+                    color: var(--main-color);
+                }
+            }
+            .nav-link.active{
+                color: var(--main-color);
+                background-color: var(--light-main-color);
+            }
+        }
+    }
+    .tab-content{
+        width: 60%;
+        margin-top: 40px;
+        .tab-pane{
+            .inner-container{
+                display: flex;
+                gap: 50px;
+                align-items: center;
+                .text-side{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    h2{
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: rgb(80, 80, 80);
+                    }
+                    .main-points-boxes{
+                        display: flex;
+                        gap: 25px;
+                        .logo-box{
+                            background-color: rgb(218, 218, 218);
+                            height: fit-content;
+                            padding: 12px;
+                            border-radius: 10px;
+                            svg{
+                                width: 15px;
+                                color: rgb(87, 87, 87);
+                            }
+                        }
+                        .text-box{
+                            h4{
+                                font-size: 22px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-weight: 100;
+                                color: rgb(49, 49, 49);
+                            }
+                        }
+                    }
+                    .btn{
+                        background-color: rgb(218, 218, 218);
+                        color: rgb(87, 87, 87);
+                        width: 35%;
+                        padding: 10px 20px;
+                    }
+                }
+                .img-side{
+                    width: 50%;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 90%;
+                        height: 100%;
+                        border-radius: 25px;
+                    }
+                    .img-text{
+                        position: absolute; left: -35px; bottom: -12px;
+                        background-color: white;
+                        padding: 25px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
