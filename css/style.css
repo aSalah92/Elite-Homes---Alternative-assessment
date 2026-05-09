@@ -12,11 +12,17 @@
 
 :root{
     --main-color: rgb(124, 58, 237);
+    --light-main-color:rgb(237, 233, 254);
+    --main-green:rgb(0, 166, 62);
+    --light-main-green:rgb(219, 252, 231);
 }
 
 
 
 .navbar-container{
+    background-color: white;
+    position: relative;
+    z-index: 10;
     .navbar{
         .container-lg{
             .navbar-brand{
@@ -81,14 +87,15 @@
                             width: 100% !important;
                         }
                         .dropdown-menu{
-                            width: 1050px;
-                            position: absolute; left: -700px; top: 40px;
+                            width: 1250px;
+                            position: absolute; left: -900px; top: 40px;
                             border: none;
-                            height: 400px;
+                            height: fit-content;
                             .inner-dropdown-menu{
                                 width: 100%;
                                 height: 100%;
                                 li:first-child{
+                                    width: 25%;
                                     .main-columns{
                                         .property-box:hover{
                                             cursor: pointer;
@@ -100,6 +107,7 @@
                                 }
                                 }
                                 li:nth-child(2){
+                                    width: 25%;
                                     .main-columns{
                                         div{
                                             align-items: center;
@@ -120,6 +128,7 @@
                                     }
                                 }
                                 li:nth-child(3){
+                                    width: 25%;
                                     .main-columns{
                                         .cities-boxes{
                                             color: aliceblue;
@@ -168,6 +177,81 @@
                                         }
                                     }
                                 }
+                                li:nth-child(4){
+                                    width: 25%;
+                                    .resources-boxes{
+                                        width: 100%;
+                                        border: 1px solid lightgray;
+                                        border-radius: 15px;
+                                        padding: 25px;
+                                        .icon-title{
+                                            align-items: center;
+                                            .icon{
+                                                padding: 10px;
+                                                background-color: gray;
+                                                border-radius: 50%;
+                                                svg{
+                                                    width: 20px;
+                                                }
+                                            }
+                                        }
+                                        a{
+                                            text-decoration: none;
+                                            color: black;
+                                            svg{
+                                                width: 14px;
+                                                margin-left: 5px;
+                                                transition: 0.25s;
+                                            }
+                                        }
+                                    }
+                                    .resources-boxes:hover{
+                                        cursor: pointer;
+                                    }
+                                    .resources-boxes:hover .learn-more{
+                                        svg{
+                                            transform: translate(5px, 0);
+                                        }
+                                    }
+                                    .resources-boxes:nth-child(2), .resources-boxes:nth-child(4){
+                                        .icon-title{
+                                            .icon{
+                                                background-color: var(--light-main-color);
+                                                svg{
+                                                    color: var(--main-color) !important;
+                                                }
+                                            }
+                                        }
+                                        a{
+                                            color: var(--main-color);
+                                            svg{
+                                                color: var(--main-color);
+                                            }
+                                        }
+                                    }
+                                    .resources-boxes:nth-child(2):hover .icon-title>h5, .resources-boxes:nth-child(4):hover .icon-title>h5{
+                                        color: var(--main-color);
+                                    }
+                                    .resources-boxes:nth-child(3){
+                                        .icon-title{
+                                            .icon{
+                                                background-color: var(--light-main-green);
+                                                svg{
+                                                    color: var(--main-green) !important;
+                                                }
+                                            }
+                                        }
+                                        a{
+                                            color: var(--main-green);
+                                            svg{
+                                                color: var(--main-green);
+                                            }
+                                        }
+                                    }
+                                    .resources-boxes:nth-child(3):hover .icon-title>h5{
+                                        color: var(--main-green);
+                                    }
+                                }
                             }
                         }
                     }
@@ -177,3 +261,102 @@
     }
 }
 
+.main-background{
+    background-image: url(/Images/hero-bg-img.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+.home{
+    padding-top: 200px;
+    background-color: rgba(124, 58, 237, 0.5);
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    .title-box{
+        width: 40%;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            font-family: sans-serif;
+            font-weight: 900;
+            font-size: 60px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+    .requirement-box{
+        background-color: white;
+        width: 50%;
+        padding: 20px;
+        border-radius: 15px;
+        row-gap: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .normal-inp-box:first-child{
+            div{
+                width: 100%;
+                position: relative;
+                svg{
+                    position: absolute;left: 15px;top: 16px;
+                    width: 15px;
+                    color: gray;
+                }
+                input{
+                    width: 100%;
+                    padding: 15px 50px;
+                    border: 1px solid lightgray;
+                    border-radius: 15px;
+                }
+            }
+        }
+        .normal-inp-box{
+                input{
+                    width: 100%;
+                    padding: 15px;
+                    border: 1px solid lightgray;
+                    border-radius: 15px;
+                    &:focus{
+                        outline: 5px var(--main-color);
+                        outline-style: double;
+                    }
+                }
+        }
+        .select-box{
+            select{
+                padding: 15px;
+                background-image: none;
+                border-radius: 15px;
+                    &:focus{
+                        outline: 5px var(--main-color);
+                        outline-style: double;
+                    }
+            }
+        }
+        .search-btn{
+            background-color: var(--main-color) !important;
+            color: aliceblue;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px;
+            svg{
+                width: 20px;
+            }
+            &:hover{
+                background-color: rgb(105, 57, 187) !important;
+            }
+        }
+    }
+}
