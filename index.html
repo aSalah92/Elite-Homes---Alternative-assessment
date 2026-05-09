@@ -10,7 +10,7 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid position-fixed navbar-container">
+    <div class="container-fluid position-fixed navbar-container shadow">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-lg p-3">
             <a class="navbar-brand" href="#">EliteHomes</a>
@@ -130,6 +130,7 @@
 
     <div class="main-background"></div>
 
+
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary" tabindex="0">
       <div id="home" class="home d-flex flex-column align-items-center">
         <div class="title-box text-center">
@@ -195,7 +196,128 @@
           </div>
           <div class="btn search-btn d-flex flex-row justify-content-center col-12 bg-danger"><svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg> Search Property</div>
         </div>
+        <div class="statistics d-flex justify-content-around w-50 p-5 text-light">
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="fs-2 fw-bolder">15,000+</h4>
+            <p>Active Listings</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="fs-2 fw-bolder">98%</h4>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="fs-2 fw-bolder">500+</h4>
+            <p>Expert Agents</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h4 class="fs-2 fw-bolder">25</h4>
+            <p>Years Experience</p>
+          </div>
+        </div>
       </div>
+
+      <div class="featured-properties bg-light position-relative z-3 d-flex justify-content-center pt-5">
+        <div class="title-box w-50 pt-5 d-flex flex-column align-items-center gap-3">
+          <div class="premium-collection d-flex align-items-center gap-2">
+            <div class="line"></div>
+            <div class="title">Premium Collection</div>
+            <div class="line"></div>
+          </div>
+          <h1>Featured Properties</h1>
+          <p>Discover our handpicked selection of premium properties in the most desirable locations</p>
+        </div>
+        <div class="content">
+          <div class="property-box">
+            <div class="img-background">
+              <div class="img-elements">Featured</div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-heart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-camera" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"></path></svg> 24 Photos</div>
+            </div>
+            <div class="text-part shadow">
+              <div class="lines">
+                <h1>$2,850,000</h1>
+                <p>Price per sq ft: $425</p>
+              </div>
+              <div class="lines">
+                <p>4 beds • 3.5 baths • 6,720 sqft</p>
+              </div>
+              <div class="lines">
+                <p>Modern Luxury Estate</p>
+              </div>
+              <div class="lines">
+                <p>1234 Beverly Hills Drive, Beverly Hills, CA 90210</p>
+              </div>
+              <div class="lines">
+                <div class="tour-agent">
+                  <img src="./Images/avatar-1.jpg" alt="">
+                  <p>John Mitchell</p>
+                </div>
+                <div class="btn">Schedule Tour</div>
+              </div>
+            </div>
+          </div>
+          <div class="property-box">
+            <div class="img-background">
+              <div class="img-elements">Featured</div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-heart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-camera" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"></path></svg> 24 Photos</div>
+            </div>
+            <div class="text-part shadow">
+              <div class="lines">
+                <h1>$2,850,000</h1>
+                <p>Price per sq ft: $425</p>
+              </div>
+              <div class="lines">
+                <p>4 beds • 3.5 baths • 6,720 sqft</p>
+              </div>
+              <div class="lines">
+                <p>Modern Luxury Estate</p>
+              </div>
+              <div class="lines">
+                <p>1234 Beverly Hills Drive, Beverly Hills, CA 90210</p>
+              </div>
+              <div class="lines">
+                <div class="tour-agent">
+                  <img src="./Images/avatar-1.jpg" alt="">
+                  <p>John Mitchell</p>
+                </div>
+                <div class="btn">Schedule Tour</div>
+              </div>
+            </div>
+          </div>
+          <div class="property-box">
+            <div class="img-background">
+              <div class="img-elements">Featured</div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-heart" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"></path></svg></div>
+              <div class="img-elements"><svg class="svg-inline--fa fa-camera" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="camera" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"></path></svg> 24 Photos</div>
+            </div>
+            <div class="text-part shadow">
+              <div class="lines">
+                <h1>$2,850,000</h1>
+                <p>Price per sq ft: $425</p>
+              </div>
+              <div class="lines">
+                <p>4 beds • 3.5 baths • 6,720 sqft</p>
+              </div>
+              <div class="lines">
+                <p>Modern Luxury Estate</p>
+              </div>
+              <div class="lines">
+                <p>1234 Beverly Hills Drive, Beverly Hills, CA 90210</p>
+              </div>
+              <div class="lines">
+                <div class="tour-agent">
+                  <img src="./Images/avatar-1.jpg" alt="">
+                  <p>John Mitchell</p>
+                </div>
+                <div class="btn">Schedule Tour</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-btn">View All Properties <svg class="svg-inline--fa fa-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></div>
+      </div>
+
       <div id="two">
 
       </div>
