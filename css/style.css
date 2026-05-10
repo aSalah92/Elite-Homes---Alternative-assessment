@@ -1049,6 +1049,7 @@
             border: var(--main-border-style);
             padding: 25px;
             border-radius: 25px;
+            transition: 0.25s;
             .logo-box{
                 background-color: lightgrey;
                 width: fit-content;
@@ -1056,8 +1057,63 @@
                 padding: 16px 22px;
                 border-radius: 15px;
                 svg{
-                    width: 15px;
+                    width: 20px;
                 }
+            }
+            p:last-child{
+                font-weight: 700;
+            }
+            &:hover{
+                transform: translate(0, -8px);
+                cursor: pointer;
+            }
+        }
+        div:first-child{
+            .logo-box{
+                background-color: var(--main-color);
+                color: white;
+            }
+            p:last-child{
+                color: var(--main-color);
+            }
+            &:hover{
+                border: 1px solid var(--main-color);
+            }
+        }
+        div:nth-child(2){
+            .logo-box{
+                background-color: rgb(160, 43, 255);
+                color: white;
+            }
+            p:last-child{
+                color: rgb(160, 43, 255);
+            }
+            &:hover{
+                border: 1px solid rgb(160, 43, 255);
+            }
+        }
+        div:nth-child(3){
+            .logo-box{
+                background: linear-gradient(to right bottom,rgb(227, 71, 232), rgb(247, 144, 79));
+                color: white;
+            }
+            p:last-child{
+                color: rgb(227, 71, 232);
+            }
+            &:hover{
+                border: 1px solid rgb(227, 71, 232);
+            }
+        }
+        div:nth-child(4){
+            .logo-box{
+                background-color: var(--main-blue);
+                color: white;
+            }
+            p:last-child{
+                color: var(--main-blue);
+            }
+            &:hover{
+                border: 1px solid var(--main-blue);
             }
         }
     }
